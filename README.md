@@ -6,11 +6,12 @@
 
 ---
 
-## ✨ What is MJON?
+### Why MJON?
 
-**MJON (Minimal JSON)** is a simplified data format designed to reduce verbosity and token overhead in LLM interactions. Inspired by YAML and JSON, it uses indentation and minimal syntax (`@key:`, `* item`) to represent structured data clearly and compactly.
-
-MJON is **human-writable**, **LLM-friendly**, and ideal for **streaming responses**, **token-efficient generation**, and **structured data exchange** between humans and large language models.
+- **Line-by-line parsing:** MJON’s indentation and prefix-based syntax allows it to be parsed incrementally line-by-line, making it ideal for streaming large or partial data inputs.
+- **Contrast with JSON:** Standard JSON requires the entire text to be loaded and parsed as a whole, which limits real-time processing and streaming use cases.
+- **Token efficiency:** By removing braces, quotes, and commas, MJON reduces token consumption when used with LLMs.
+- **Human and machine friendly:** Easy to read and write manually, yet structured enough for programmatic manipulation.
 
 ---
 
